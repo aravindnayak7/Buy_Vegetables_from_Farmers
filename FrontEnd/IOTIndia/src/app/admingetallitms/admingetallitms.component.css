@@ -1,0 +1,55 @@
+/* .notecard-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    /* margin-top: 2%; */
+    /* margin-left: 25%;
+    box-shadow: 27px;
+} */
+
+ 
+
+
+/* .note-card
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 350px;
+    padding: 1%;
+    margin: 1%;
+    background-color: rgb(99, 236, 236);
+    box-shadow: 27px;
+} */
+
+.notecard-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+  }
+  
+  .note-card {
+    width: 300px;
+    height: 320px;
+    padding: 10px;
+    margin-left: 149px;
+    color:white;
+    background-color:#34495e;
+    border-radius: 8px;
+    box-shadow: 0 2px 41px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .fixed-image {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .fixed-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  

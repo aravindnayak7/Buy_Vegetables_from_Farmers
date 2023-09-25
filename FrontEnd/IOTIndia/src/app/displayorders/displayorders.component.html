@@ -1,0 +1,40 @@
+<app-userdashboard></app-userdashboard>
+<!-- <div *ngFor="let orderObject of allitems">
+    {{orderObject.productname}}
+    <button (click)="deleteOrders(orderObject.productId)">delete item</button>
+</div> -->
+
+
+
+<div class="notecard-container">
+    <div class="note-card " *ngFor="let orderObject of allitems">
+      <div>
+        <div class="fixed-image">
+            Uploaded image:<img width="100" src={{orderObject.imageurl}}/>
+        </div>
+      </div>
+      <div align="center">
+        Category:{{orderObject.productname}}<br/>
+        Product Name:{{orderObject.category}}<br/>
+        Price:{{orderObject.price}}:Rs<br/>
+      {{orderObject.productId}}<br/>
+      </div>
+      <!-- <div>
+        <button class="btn btn-primary" (click)="viewProduct(category.productId)" (click)="startBounceAnimation()">Buy Now</button>
+      </div> -->
+      <br/>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-start">
+            <!-- <button class="btn btn-primary" (click)="deleteItems(aObj.productId)">Delete</button> -->
+          </div>
+          <div class="col d-flex justify-content-end">
+            <!-- <app-wishlist></app-wishlist> -->
+            <!-- <button (click)="addTOCart(pro.productId)">Add to cart</button> -->
+            <button class="btn btn-primary" (click)="deleteOrders(orderObject.productId)">Delete</button>
+           </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>

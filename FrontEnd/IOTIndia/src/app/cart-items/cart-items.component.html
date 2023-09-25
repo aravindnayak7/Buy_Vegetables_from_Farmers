@@ -1,0 +1,36 @@
+<!-- <div *ngFor="let sObj of items">
+  <p>  {{sObj.productname}}</p>
+</div> -->
+<app-userdashboard></app-userdashboard>
+<div class="notecard-container">
+    <div class="note-card " *ngFor="let sObj of items">
+      <div>
+        <div class="fixed-image">
+            <img width="100" src={{sObj.imageurl}}/>
+        </div>
+      </div>
+      <div align="center">
+        Category:{{sObj.category}}<br/>
+        Product Name:{{sObj.productname}}<br/>
+        Price:{{sObj.price}}:Rs<br/>
+      {{sObj.productId}}<br/>
+      </div>
+      <!-- <div>
+        <button class="btn btn-primary" (click)="viewProduct(category.productId)" (click)="startBounceAnimation()">Buy Now</button>
+      </div> -->
+      <br/>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-start">
+            <!-- <button class="btn btn-primary" (click)="deleteItems(aObj.productId)">Delete</button> -->
+          </div>
+          <div class="col d-flex justify-content-end">
+            <!-- <app-wishlist></app-wishlist> -->
+            <!-- <button (click)="addTOCart(pro.productId)">Add to cart</button> -->
+            <button class="btn btn-primary" (click)="deleteProduct(sObj.productId)">Delete</button>
+           </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>

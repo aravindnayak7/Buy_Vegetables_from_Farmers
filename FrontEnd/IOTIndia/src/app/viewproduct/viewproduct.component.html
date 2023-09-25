@@ -1,0 +1,39 @@
+<!-- Hello
+
+    <h1>{{pro.productname}}</h1><br/>
+    {{pro.price}}
+    {{pro.productId}} -->
+<app-header></app-header>
+
+            <div class="container mt-5 mb-3">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="container">
+                            <div class="card">
+                                <img src="{{pro.imageurl}}"  alt="" class="card__img">                 
+                                     <div class="card__data">
+                                         <h1 class="card__title">{{pro.category}}</h1>
+                                         <span class="card__preci">{{pro.productname}}</span>
+                                         <!-- <p class="card__description">Nike Air Jordan Footwear basketball sneakers.</p> -->
+                                         <a href="#" class="card__button" routerLink="/category">Go Back</a>
+                                     </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="container">
+                            <div >
+                                <h1><b>Product Name: {{pro.productname}}</b></h1>
+                                <h1 >Category:{{pro.category}}</h1><br/>
+                                <h1>Price:{{pro.price}}</h1>
+                                
+                                <button class="glow-on-hover" routerLink="/shipping" type="button">Buy Now</button>
+                                <br/>
+                                <br/>
+                                <div class="justify-content-start"><app-wishlist></app-wishlist></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<app-footer></app-footer>

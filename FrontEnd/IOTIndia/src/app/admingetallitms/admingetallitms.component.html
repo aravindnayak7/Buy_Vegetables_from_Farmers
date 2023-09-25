@@ -1,0 +1,52 @@
+<!-- <li *ngFor="let aObj of items" >
+<p>{{aObj.productname}}</p>
+<p>{{aObj.category}}</p>
+<p>{{aObj.price}}</p>
+<p><img width="100" src={{aObj.imageurl}}/></p>
+<button (click)="deleteItems(aObj.productId)">Delete</button>
+</li> -->
+<app-adminsidenav></app-adminsidenav>
+<!-- <div class="notecard-container ">
+    <mat-card class="note-card" *ngFor="let aObj of items" >
+        
+        <mat-card-content>Category:{{aObj.productname}}</mat-card-content><br/>
+        <mat-card-content>Product Name:{{aObj.category}}</mat-card-content><br/>
+        <mat-card-content>Price:{{aObj.price}}:Rs</mat-card-content><br/>
+        <mat-card-content>Uploaded image:<img width="100" src={{aObj.imageurl}}/></mat-card-content><br/>
+        <p></p>
+        <button class="hi" class="btn btn-danger backdrop-brightness-105" (click)="deleteItems(aObj.productId)">delete Product</button>
+        
+    </mat-card><br/><br/>
+    </div> -->
+    
+    <div class="notecard-container">
+        <div class="note-card " *ngFor="let aObj of items">
+          <div>
+            <div class="fixed-image">
+                Uploaded image:<img width="100" src={{aObj.imageurl}}/>
+            </div>
+          </div>
+          <div align="center">
+            Category:{{aObj.productname}}<br/>
+            Product Name:{{aObj.category}}<br/>
+            Price:{{aObj.price}}:Rs<br/>
+          {{aObj.productId}}<br/>
+          </div>
+          <!-- <div>
+            <button class="btn btn-primary" (click)="viewProduct(category.productId)" (click)="startBounceAnimation()">Buy Now</button>
+          </div> -->
+          <br/>
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-start">
+                <button class="btn btn-primary" (click)="deleteItems(aObj.productId)">Delete</button>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <!-- <app-wishlist></app-wishlist> -->
+                <!-- <button (click)="addTOCart(pro.productId)">Add to cart</button> -->
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>

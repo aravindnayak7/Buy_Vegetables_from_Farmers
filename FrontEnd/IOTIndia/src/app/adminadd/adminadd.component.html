@@ -1,0 +1,18 @@
+<!-- <form [formGroup]="aForm" (ngSubmit)="addItemDetails(aForm)">
+   Category <input type="text" formControlName="category" /><br/>
+   ProductName<input type="text" formControlName="productname" /><br/>
+   Price<input type="text" formControlName="price"/><br/>
+   AddImage<input type="text" formControlName="imageurl"/><br/>
+   <button type="submit">Submit now</button>
+</form> -->
+<app-adminsidenav></app-adminsidenav>
+    <body>
+        <form class="box" [formGroup]="aForm" (ngSubmit)="addItemDetails(aForm)">
+        <h1>Add Product</h1>
+        Category <input type="text" formControlName="category" placeholder="Enter category"/><br/>
+        Product Name<input type="text" formControlName="productname" placeholder="Enter ProductName"/><br/>
+        Price<input type="text" formControlName="price" placeholder="Enter Price"/><br/>
+        Add Product Image<input type="text" formControlName="imageurl" placeholder="Paste Image Url"/><br/>
+        <button type="submit" class="bounce-button" (click)="bounce()">Add Product Now</button>
+            </form>
+    </body>
